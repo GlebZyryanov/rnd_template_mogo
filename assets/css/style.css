@@ -22,6 +22,16 @@ h6 {
   margin: 0;
 }
 
+hr{
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 40px 0;
+    border: 0;
+    background-color: #999;
+
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -197,7 +207,13 @@ h6 {
 .section {
   padding: 80px 0;
 }
-
+.section--devices{
+  padding-bottom: 0;
+  background: url(../images//images/features/images/Layer\ 45.jpg) center no-repeat;
+  background-size: cover;
+  --webkit-background-size: cover;
+  margin-bottom: 40px;
+}
 .section_header {
   width: 100%;
   max-width: 950px;
@@ -321,4 +337,132 @@ h6 {
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
+}
+
+.services{
+    display: flex;
+    flex-direction: row;
+}
+
+.services_item{
+    flex: 1 1 0;
+    padding-left: 85px;
+    padding-right: 35px;
+    position: relative;
+}
+.services_icon{
+    position: absolute;
+    top:3px;
+    left: 28px;
+    z-index: 1;
+}
+
+.services_title{
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.services_text{
+    font-size: 15px;
+    color: #999;
+}
+
+.devices{
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+.devices_item{
+  display: block;
+}
+.devices_item--iphone{
+  position: absolute;
+  bottom: -90px;
+  right: 0;
+  z-index: 1;
+
+}
+
+.wedo{
+  display: flex;
+  flex-direction: row;
+}
+.wedo_item{
+  width: 50%;
+}
+
+.accordion_item{
+  border: 1px solid #999;
+  margin-bottom: 10px;
+
+}
+
+.accordion_item.active
+.accordion_content
+{
+display: block;
+}
+
+.accordion_item.active
+.accordion_header::after{
+  transform: rotate(-45deg);
+  margin-top: 5px;
+}
+
+.accordion_header{
+  border-bottom: 1px solid transparent;
+  padding: 15px 20px 15px 65px;
+  position: relative;
+  cursor: pointer;
+
+}
+
+.accordion_item.active
+.accordion_header{
+  border-bottom-color: #999;
+}
+
+
+.accordion_header::after{
+  display: block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-top: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  position: absolute;
+  top:50%;
+  right: 20px;
+  z-index: 1;
+  transform: translateY(-50%) rotate(135deg);
+
+
+}
+
+.accordion_icon{
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.accordion_content{
+  display: none;
+
+  padding: 15px 20px;
+  font-size: 15px;
+  color: #999;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.accordion_title{
+  font-size: 14px;
+  color: #333;
+  text-transform: uppercase;
+
 }
